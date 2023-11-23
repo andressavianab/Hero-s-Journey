@@ -62,13 +62,12 @@ export const Home = () => {
     const { powerstats } = hero;
 
     if (!powerstats) {
-      return 0; // Retornar 0 caso powerstats não esteja definido
+      return 0;
     }
 
     const { intelligence, strength, speed, durability, power, combat } =
       powerstats;
 
-    // Convertendo os valores para números e somando-os
     const total = [
       intelligence,
       strength,
