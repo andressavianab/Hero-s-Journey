@@ -4,12 +4,12 @@ export const Card = (props) => {
       <div className="w-40 h-60 mt-5 shadow-lg shadow-darkRed">
         <img
           className="w-full h-full"
-          src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/1-a-bomb.jpg"
+          src={props.img}
           alt=""
         />
       </div>
       <div className="font-semibold text-yellow mt-4">
-        <p>A-Bomb</p>
+        <p>{props.name}</p>
       </div>
     </div>
   );
