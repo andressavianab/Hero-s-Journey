@@ -11,8 +11,12 @@ export default {
         red: "#aa0404",
         darkRed: "#6a0c0c",
         yellow: "#fbca03",
-        darkYellow: "#ba7e10"
+        darkYellow: "#ba7e10",
+        blue: "#232b36"
       },
+      boxShadow: {
+        cardShadow: '7px 7px 0px 0px rgba(0,0,0,0.47);'
+      }
     },
   },
   plugins: [],
