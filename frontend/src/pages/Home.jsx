@@ -96,11 +96,9 @@ export const Home = () => {
     winner = null;
   }
 
-  console.log("O vencedor é:", winner ? winner.name : "Empate");
-
   return (
     <div className="mt-7">
-      <div className="flex flex-wrap pl-8 pr-8 justify-between gap-7">
+      <div className="flex flex-wrap pl-8 pr-8 justify-center gap-7">
         {filteredData.map((hero) => (
           <Card
             key={hero.id}
