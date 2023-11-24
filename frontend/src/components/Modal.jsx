@@ -57,7 +57,7 @@ export const HeroModal = ({ isOpen, handleClose, heroes, winner }) => {
           onClick={handleClose}
           className="mt-4 px-4 py-2 bg-yellow text-red rounded hover:bg-darkYellow focus:outline-none"
         >
-          Fechar
+          Close
         </button>
       </div>
     </div>

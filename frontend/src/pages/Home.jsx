@@ -85,15 +85,12 @@ export const Home = () => {
   const hero2Total =
     selectedHeroes.length > 1 ? calculatePowerstatsTotal(selectedHeroes[1]) : 0;
 
-  let winner = null;
-
-  if (hero1Total > hero2Total) {
-    winner = selectedHeroes[0];
-  } else if (hero2Total > hero1Total) {
-    winner = selectedHeroes[1];
-  } else {
-    winner = null;
-  }
+  let winner =
+    hero1Total > hero2Total
+      ? selectedHeroes[0]
+      : hero2Total > hero1Total
+      ? selectedHeroes[1]
+      : null;
 
   return (
     <div className="mt-7">
